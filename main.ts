@@ -1,6 +1,6 @@
 let Angle = 35
+pins.servoWritePin(AnalogPin.P0, Angle)
 basic.forever(function () {
-    pins.servoWritePin(AnalogPin.P0, Angle)
     while (Angle < 80) {
         Angle += 1
         pins.servoWritePin(AnalogPin.P0, Angle)
